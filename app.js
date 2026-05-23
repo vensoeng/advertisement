@@ -1,6 +1,6 @@
 const allowedHosts = [
-    'example.com',
-    'www.example.com',
+    'http://vensoeng.vercel.app',
+    'http://vensoeng.free.nf',
 ];
 
 if (!allowedHosts.includes(window.location.hostname)) {
