@@ -1,10 +1,11 @@
 const allowedHosts = [
-    'http://vensoeng.vercel.app',
-    'http://vensoeng.free.nf',
+    'vensoeng.vercel.app',
+    'vensoeng.free.nf',
 ];
 
-if (!allowedHosts.includes(window.location.hostname)) {
-    console.warn('Script blocked: unauthorized host', window.location.hostname);
+const currentHost = window.location.hostname;
+if (!allowedHosts.includes(currentHost)) {
+    console.warn('Script blocked: unauthorized host', currentHost);
     throw new Error('Unauthorized host');
 }
 
